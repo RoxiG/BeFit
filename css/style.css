@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Style+Script&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	font-size: 62.5%;
+	--text-color-primary: #000;
+	--color-primary: rgb(255, 180, 162);
+	--color-secondary: #8b5d66;
+	--color-tertiary: #6d6875;
+	--font-logo: 'Style Script', cursive;
+	--font-primary: 'Montserrat', sans-serif;
+	--color-white: #fff;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: var(--font-primary);
+	color: var(--text-color-primary);
+  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+}
+
+a {
+	text-decoration: none;
+	color: var(--text-color-primary);
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.section__padding {
+	padding: 6em 2em;
+}
+
+.section__heading {
+	font-size: 3rem;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0.1em 1.5em 0.1em 0.5em;
+	background-image: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
+	z-index: 100;
+}
+
+.nav > .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Burger menu for smaller screens */
+.burger_menu {
+	padding: 1em;
+	background: none;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.burger_menu__box {
+	position: relative;
+	width: 40px;
+	height: 30px;
+}
+
+.burger_menu__bars,
+.burger_menu__bars::before,
+.burger_menu__bars::after {
+	position: absolute;
+	left: 0;
+	height: 3px;
+	background-color: var(--text-color-primary);
+}
+
+.burger_menu__bars {
+	top: 0;
+	width: 100%;
+}
+
+.burger_menu__bars::before {
+	top: 13px;
+	width: 60%;
+	content: '';
+}
+
+.burger_menu__bars::after {
+	content: '';
+	top: 27px;
+	width: 30%;
+}
+
+.nav__right__item {
+	margin-left: 0.3em;
+	padding: 0.2em;
+	font-size: 2.4rem;
+}
+
+.nav__right__item:hover {
+	color: var(--color-secondary);
+}
+
+.nav__left {
+	display: none;
+}
+
+/* hero section */
+
+.header {
+	display: flex;
+	justify-content: center;
+	height: 100%;
+	margin-top: 3em;
+	background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),
+		url('../img/weight-loss.jpg');
+	background-position: center;
+	background-size: cover;
+	color: var(--color-white);
+}
+
+.header__content {
+	padding: 4em 2em;
+	color: var(--color-white);
+}
+
+.header__logo {
+	font-size: 5rem;
+	font-family: var(--font-logo);
+	margin-bottom: 0.5em;
+}
+
+.header__heading {
+	font-size: 2.4rem;
+	margin-bottom: 0.5em;
+}
+
+.header__title--mini {
+	font-size: 1.8rem;
+	margin-bottom: 1em;
+}
+
+.header__features {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 3em;
+}
+
+.header__features__item {
+	padding-bottom: 1em;
+	font-size: 1.4rem;
+}
+
+.header__features__item i {
+	padding-right: 0.3em;
+	font-size: 1.8rem;
+}
+
+.btn{
+  padding: 0.6em 1.2em;
+	font-size: 1.6rem;
+	font-weight: 600;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.header__btn {	
+	text-transform: uppercase;
+	color: var(--color-white);
+	border: 2px solid var(--color-white);
+	background-color: var(--color-secondary);		
+}
+
+.header__btn:hover {
+	cursor: pointer;
+	color: var(--text-color-primary);
+	background-color: #fff;
+}
+
+.offer__diets {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.offer__diet {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  margin-bottom: 2em;
+	padding: 2em;
+	width: 300px;
+	border: 1px solid white;
+	border-radius: 20px;
+	overflow: hidden;
+  background-image: linear-gradient(315deg, #ffab818a 0%,rgba(255, 147, 139, 0.336) 74%);
+  
+}
+
+.offer__diet__img {
+	width: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+.offer__diet__text {
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.offer__name {
+	font-size: 1.8rem;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.offer__diet__desc {
+	font-size: 1.6rem;
+	margin-bottom: 2em;
+  font-weight: 500;
+  
+}
+
+.offer__btn__more{
+  font-weight: 700;
+  transition: color 0.5s;
+}
+
+.offer__btn__more:hover{ 
+  color: var(--color-secondary);  
+}
+
+@media screen and (min-width: 576px) {
+	.header__logo {
+		font-size: 6rem;
+	}
+
+	.header__content {
+		padding: 4em 0 6em 5em;
+	}
+
+	.header__features__item {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.burger_menu {
+		display: none;
+	}
+
+	.nav__left {
+		display: flex;
+	}
+
+	.nav__left__item {
+		position: relative;
+		font-size: 1.6rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 0.5em 0.5em;
+		margin: 0.5em 0.5em;
+	}
+
+	.nav__left__item::after {
+		content: '';
+		position: absolute;
+		bottom: 4px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: var(--text-color-primary);
+		transform: scale(0);
+		transition: transform 0.4s;
+	}
+
+	.nav__left__item:hover {
+		color: var(--color-secondary);
+	}
+
+	.nav__left__item:hover::after {
+		transform: scale(1);
+		background-color: var(--color-secondary);
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.header {
+		background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),
+			url('../img/weight-loss-big.jpg');
+	}
+
+	.header__logo {
+		font-size: 7rem;
+	}
+
+	.header__heading {
+		font-size: 4rem;
+	}
+
+	.header__features__item {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1400px) {
+	.header__logo {
+		font-size: 8rem;
+	}
+}
