@@ -171,26 +171,27 @@ a {
 
 .btn{
   padding: 0.6em 1.2em;	
-	font-weight: 600;
-  border-radius: 15px;
-  transition: all 0.5s;
-}
-
-.header__btn {	
   font-size: 1.6rem;
-	text-transform: uppercase;
-	color: var(--color-white);
+	font-weight: 600;
+  text-transform: uppercase;	
+  color: var(--color-white);
 	border: 2px solid var(--color-white);
 	background-color: var(--color-secondary);		
+  border-radius: 15px;
+  transition: color 0.5s, background-color 0.5s;
 }
 
-.header__btn:hover {
-	cursor: pointer;
+.header__btn:hover {	
 	color: var(--text-color-primary);
-	background-color: #fff;
+	background-color: var(--color-primary);
 }
 
 /* Section with popular diets */
+
+.offer{
+  display: flex;
+  flex-direction: column;
+}
 
 .offer__diets {
 	display: flex;
@@ -250,6 +251,21 @@ a {
 .offer__btn__more:hover{ 
   color: var(--color-secondary);  
 }
+
+.offer__more-diets{
+  margin-top: 2em;
+  align-self: center;
+  border: none;  
+  background-color: var(--color-primary);
+  color: var(--text-color-primary);  
+}
+
+.offer__more-diets:hover{
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+/* Media */
 
 @media screen and (min-width: 576px) {
   .section__heading {
@@ -343,6 +359,10 @@ a {
 @media screen and (min-width: 1200px) {
   .section__heading {
     font-size: 4rem;
+  }
+
+  .offer__more-diets{
+    font-size: 2.2rem;
   }
 }
 
