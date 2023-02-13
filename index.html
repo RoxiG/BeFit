@@ -5,11 +5,13 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="author" content="Roksana Gamziuk" />
+    <meta name="description" content="BeFit - najlepsze diety! Odchudzanie - z nami się uda!">
 		<title>BeFit - najlepsze diety!</title>
 		<script src="https://kit.fontawesome.com/4e6ea67817.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
+    <!-- burger menu and navigation bar -->
 		<nav class="nav">
 			<div class="wrapper">
 				<button class="burger_menu">
@@ -33,9 +35,8 @@
 		</nav>
 		<header class="header">
 			<div class="header__content wrapper">
-				<p class="header__logo">BeFit</p>
-				<h1 class="header__heading">Najlepsze diety</h1>
-				<h2 class="header__title--mini">Z nami Ci się uda!</h2>
+				<h1 class="header__logo">BeFit</h1>
+				<h2 class="header__heading">Z nami Ci się uda!</h2>
 				<div class="header__features">
 					<p class="header__features__item">
 						<i class="fa-solid fa-utensils"></i> dopasowany jadłospis
@@ -50,78 +51,113 @@
 		</header>
 
 		<main class="main wrapper">
+      <!---------------- section with popular diets ---------------->
 			<section class="offer section__padding">
 				<h2 class="section__heading">Popularne diety</h2>
+
+        <!-- Start of diet list -->
 				<div class="offer__diets">
+
+          <!---------------- Diet 1 ---------------->
 					<div class="offer__diet">
-						<img src="./img/keto-diet.jpg" alt="Keto diet" class="offer__diet__img" />
-						<div class="offer__diet__text">
-							<h3 class="offer__name">Dieta ketogeniczna</h3>
-							<p class="offer__diet__desc">
-								Niskowęglowodanowa dieta, pozwalająca szybko zrzucić zbędne kilogramy. Oparta na
-								zdrowych tłuszczach zwierzęcych i roślinnych, nabiale oraz wybranych warzywach.
-							</p>
-							<a href="#" class="offer__btn__more btn">Zobacz menu</a>
-						</div>
-					</div>
-					<div class="offer__diet">
-						<img src="./img/keto-diet.jpg" alt="Keto diet" class="offer__diet__img" />
-						<div class="offer__diet__text">
+						<div class="offer__diet__info">
+							<img src="./img/keto-diet.jpg" alt="Dieta ketogeniczna - posiłek z jajkami, awokado i warzywami" class="offer__diet__img" />
 							<h3 class="offer__name">Dieta ketogeniczna</h3>
 							<p class="offer__diet__desc">
 								Niskowęglowodanowa dieta, pozwalająca szybko zrzucić zbędne kilogramy. Oparta na
 								zdrowych tłuszczach zwierzęcych i roślinnych, nabiale oraz zielonych warzywach.
 							</p>
-							<a href="#" class="offer__btn__more btn">Zobacz menu</a>
 						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
 					</div>
+
+          <!---------------- Diet 2 ---------------->
 					<div class="offer__diet">
-						<img src="./img/keto-diet.jpg" alt="Keto diet" class="offer__diet__img" />
-						<div class="offer__diet__text">
-							<h3 class="offer__name">Dieta ketogeniczna</h3>
+						<div class="offer__diet__info">
+							<img src="./img/ig-diet.jpg" alt="Dieta o niskim indeksie glikemicznym - posiłek pełen warzyw" class="offer__diet__img" />
+							<h3 class="offer__name">Dieta o niskim indeksie glikemicznym</h3>
 							<p class="offer__diet__desc">
-								Niskowęglowodanowa dieta, pozwalająca szybko zrzucić zbędne kilogramy. Oparta na
-								zdrowych tłuszczach zwierzęcych i roślinnych, nabiale oraz zielonych warzywach.
+								Doskonała dieta dla osób z cukrzycą oraz insulinoopornością, oraz dla tych którzy
+								chcą cieszyć się dobrym zdrowiem. Pomaga utrzymać stały poziom glukozy we krwi
 							</p>
-							<a href="#" class="offer__btn__more btn">Zobacz menu</a>
 						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu  <i class="fa-solid fa-arrow-right"></i></a>
 					</div>
-          <div class="offer__diet">
-						<img src="./img/keto-diet.jpg" alt="Keto diet" class="offer__diet__img" />
-						<div class="offer__diet__text">
-							<h3 class="offer__name">Dieta ketogeniczna</h3>
-							<p class="offer__diet__desc">
-								Niskowęglowodanowa dieta, pozwalająca szybko zrzucić zbędne kilogramy. Oparta na
-								zdrowych tłuszczach zwierzęcych i roślinnych, nabiale oraz wybranych warzywach.
-							</p>
-							<a href="#" class="offer__btn__more btn">Zobacz menu</a>
-						</div>
-					</div>
+
+          <!---------------- Diet 3 ---------------->
 					<div class="offer__diet">
-						<img src="./img/keto-diet.jpg" alt="Keto diet" class="offer__diet__img" />
-						<div class="offer__diet__text">
-							<h3 class="offer__name">Dieta ketogeniczna</h3>
+						<div class="offer__diet__info">
+							<img src="./img/vege-diet.jpg" alt="Dieta wegetariańska - różne warzywa i owoce" class="offer__diet__img" />
+							<h3 class="offer__name">Dieta wegetariańska</h3>
 							<p class="offer__diet__desc">
-								Niskowęglowodanowa dieta, pozwalająca szybko zrzucić zbędne kilogramy. Oparta na
-								zdrowych tłuszczach zwierzęcych i roślinnych, nabiale oraz zielonych warzywach.
+								Specjalnie skomponowana dieta dla osób niejedzących mięsa. Pełna warzyw, owoców, nabiału, orzechów, produktów zbożowych oraz roślin strączkowych, będących głównym źródłem białka.
 							</p>
-							<a href="#" class="offer__btn__more btn">Zobacz menu</a>
 						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu  <i class="fa-solid fa-arrow-right"></i></a>
 					</div>
+
+          <!---------------- Diet 4 ---------------->
 					<div class="offer__diet">
-						<img src="./img/keto-diet.jpg" alt="Keto diet" class="offer__diet__img" />
-						<div class="offer__diet__text">
-							<h3 class="offer__name">Dieta ketogeniczna</h3>
+						<div class="offer__diet__info">
+							<img src="./img/vegan-diet.jpg" alt="Dieta wegańska - warzywa i owoce" class="offer__diet__img" />
+							<h3 class="offer__name">Dieta wegańska</h3>
 							<p class="offer__diet__desc">
-								Niskowęglowodanowa dieta, pozwalająca szybko zrzucić zbędne kilogramy. Oparta na
-								zdrowych tłuszczach zwierzęcych i roślinnych, nabiale oraz zielonych warzywach.
+								Zbilansowana dieta dla osób na diecie roślinnej. Pełna warzyw, owoców, orzechów, produktów zbożowych oraz roślin strączkowych. Nie zawiera żadnych produktów odzwierzęcych.
 							</p>
-							<a href="#" class="offer__btn__more btn">Zobacz menu</a>
 						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu  <i class="fa-solid fa-arrow-right"></i></a>
+					</div>
+
+          <!---------------- Diet 5 ---------------->
+					<div class="offer__diet">
+						<div class="offer__diet__info">
+							<img src="./img/low-cal.jpg" alt="Dieta niskokaloryczna - zbilansowany posiłek z serem, pomidorem, szynką, chlebem ciemnym" class="offer__diet__img" />
+							<h3 class="offer__name">Dieta niskokaloryczna</h3>
+							<p class="offer__diet__desc">
+								Idealna dieta dla każdego, pozwalająca zrzucić zbędne kilogramy. Zbilansowana i smaczna, nie wyklucza żadnych składników.
+							</p>
+						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu  <i class="fa-solid fa-arrow-right"></i></a>
+					</div>
+
+          <!---------------- Diet 6 ---------------->
+					<div class="offer__diet">
+						<div class="offer__diet__info">
+							<img src="./img/gluten-free.jpg" alt="Dieta bezglutenowa" class="offer__diet__img" />
+							<h3 class="offer__name">Dieta bezglutenowa</h3>
+							<p class="offer__diet__desc">
+								Dieta skomponowana specjalnie dla osób z nietolerancją pokarmową i alergiami żywieniowymi. Pozbawiona produktów zawierających gluten.
+							</p>
+						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu  <i class="fa-solid fa-arrow-right"></i></a>
+					</div>
+
+          <!---------------- Diet 7 ---------------->
+					<div class="offer__diet">
+						<div class="offer__diet__info">
+							<img src="./img/no-milk.jpg" alt="Dieta bez nabiału" class="offer__diet__img" />
+							<h3 class="offer__name">Dieta bez nabiału</h3>
+							<p class="offer__diet__desc">
+								Zbilansowana dieta, wykluczająca produkty mleczne. Idealna dla osób z alergiami pokarmowymi i nietolerancją laktozy.
+							</p>
+						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu  <i class="fa-solid fa-arrow-right"></i></a>
+					</div>
+
+          <!---------------- Diet 8 ---------------->
+					<div class="offer__diet">
+						<div class="offer__diet__info">
+							<img src="./img/sport-diet.jpg" alt="Dieta sportowa" class="offer__diet__img" />
+							<h3 class="offer__name">Dieta sportowa</h3>
+							<p class="offer__diet__desc">
+								Dieta dla osób uprawiających sport i aktywnych fizycznie. Pozwala zbudować masę mięśniową, dzięki zwiększonym ilościom białka.
+							</p>
+						</div>
+						<a href="#" class="offer__btn__more">Zobacz menu  <i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</section>
 		</main>
-    <footer></footer>
+		<footer></footer>
 	</body>
 </html>

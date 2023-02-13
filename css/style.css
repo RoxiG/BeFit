@@ -26,6 +26,10 @@ body {
   /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
 }
 
+::selection{
+  background-color: var(--color-primary);
+}
+
 a {
 	text-decoration: none;
 	color: var(--text-color-primary);
@@ -34,15 +38,15 @@ a {
 .wrapper {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1400px;
 }
 
 .section__padding {
-	padding: 6em 2em;
+	padding: 4em 2em;
 }
 
 .section__heading {
-	font-size: 3rem;
+	font-size: 2.6rem;
 	text-align: center;
 	margin-bottom: 2em;
 }
@@ -51,8 +55,7 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
-	padding: 0.1em 1.5em 0.1em 0.5em;
+	width: 100%;	
 	background-image: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
 	z-index: 100;
 }
@@ -61,6 +64,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+  padding: 0.1em 2em 0.1em 1.8em;
 }
 
 /* Burger menu for smaller screens */
@@ -117,7 +121,7 @@ a {
 	display: none;
 }
 
-/* hero section */
+/* header */
 
 .header {
 	display: flex;
@@ -137,19 +141,15 @@ a {
 }
 
 .header__logo {
-	font-size: 5rem;
+  margin-bottom: 0.1em;
+	font-size: 6rem;
 	font-family: var(--font-logo);
-	margin-bottom: 0.5em;
+	font-weight: 500;
 }
 
 .header__heading {
-	font-size: 2.4rem;
-	margin-bottom: 0.5em;
-}
-
-.header__title--mini {
-	font-size: 1.8rem;
-	margin-bottom: 1em;
+  margin-bottom: 1em;
+	font-size: 1.8rem;	
 }
 
 .header__features {
@@ -157,11 +157,11 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	margin-bottom: 3em;
+  font-size: 1.6rem;
 }
 
 .header__features__item {
-	padding-bottom: 1em;
-	font-size: 1.4rem;
+	padding-bottom: 1em;	
 }
 
 .header__features__item i {
@@ -170,14 +170,14 @@ a {
 }
 
 .btn{
-  padding: 0.6em 1.2em;
-	font-size: 1.6rem;
+  padding: 0.6em 1.2em;	
 	font-weight: 600;
   border-radius: 15px;
   transition: all 0.5s;
 }
 
 .header__btn {	
+  font-size: 1.6rem;
 	text-transform: uppercase;
 	color: var(--color-white);
 	border: 2px solid var(--color-white);
@@ -190,56 +190,61 @@ a {
 	background-color: #fff;
 }
 
+/* Section with popular diets */
+
 .offer__diets {
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+	justify-content: space-evenly;	
 	flex-wrap: wrap;
+  gap: 1em;
 }
 
-.offer__diet {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.offer__diet {	  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-bottom: 2em;
-	padding: 2em;
+	padding-bottom: 2em;
 	width: 300px;
-	border: 1px solid white;
 	border-radius: 20px;
+  box-shadow: 10px 10px 25px  #a88a90b4;
 	overflow: hidden;
   background-image: linear-gradient(315deg, #ffab818a 0%,rgba(255, 147, 139, 0.336) 74%);
-  
+  transition: transform 0.4s;
+}
+
+.offer__diet:hover{
+  transform: scale(1.05);  
 }
 
 .offer__diet__img {
-	width: 100%;
-	object-fit: cover;
-	border-radius: 20px;
-}
-
-.offer__diet__text {
-	margin-top: 2em;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  margin-bottom: 2em;	
+  width: 100%;
+  height: 200px;
+	object-fit: cover;	
 }
 
 .offer__name {
+  margin-bottom: 1em;
 	font-size: 1.8rem;
-	text-align: center;
-	margin-bottom: 1em;
+	text-align: center;	
 }
 
-.offer__diet__desc {
-	font-size: 1.6rem;
-	margin-bottom: 2em;
-  font-weight: 500;
-  
+.offer__diet__desc {	   
+	margin-bottom: 2em; 
+  padding: 0 2em;
+  font-size: 1.6rem; 
 }
 
-.offer__btn__more{
+.offer__btn__more{     
+  padding: 0 2em;
   font-weight: 700;
   transition: color 0.5s;
+}
+
+.offer__btn__more i{    
+  padding-left: 0.5em; 
+  font-size: 1.4rem;
 }
 
 .offer__btn__more:hover{ 
@@ -247,16 +252,24 @@ a {
 }
 
 @media screen and (min-width: 576px) {
+  .section__heading {
+    font-size: 3rem;
+  }
+
 	.header__logo {
-		font-size: 6rem;
+		font-size: 8rem;
 	}
+
+  .header__heading{
+    font-size: 3rem;
+  }
 
 	.header__content {
 		padding: 4em 0 6em 5em;
 	}
 
-	.header__features__item {
-		font-size: 1.6rem;
+	.header__features{
+		font-size: 1.8rem;
 	}
 }
 
@@ -298,32 +311,60 @@ a {
 		transform: scale(1);
 		background-color: var(--color-secondary);
 	}
+
+  .header__btn {	
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  .section__heading {
+    font-size: 3.2rem;
+  }
+
+  .section__padding {
+    padding: 6em 2em;
+  }
+
 	.header {
 		background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),
 			url('../img/weight-loss-big.jpg');
 	}
 
 	.header__logo {
-		font-size: 7rem;
+		font-size: 10rem;
 	}
-
-	.header__heading {
-		font-size: 4rem;
-	}
-
-	.header__features__item {
-		font-size: 1.8rem;
+	
+	.header__features{
+		font-size: 2rem;
 	}
 }
 
 @media screen and (min-width: 1200px) {
+  .section__heading {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (min-width: 1400px) {
-	.header__logo {
-		font-size: 8rem;
+	.nav__left__item {
+		position: relative;
+		font-size: 1.8rem;
+  }
+  
+  .header__logo {
+		font-size: 12rem;
 	}
+
+  .header__heading {
+		font-size: 3.8rem;
+	}
+
+	.header__features{
+		font-size: 2.2rem;
+	}
+
+  .header__btn {	
+    font-size: 2rem;
+  }
 }
