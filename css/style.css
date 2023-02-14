@@ -11,9 +11,10 @@
 :root {
 	font-size: 62.5%;
 	--text-color-primary: #000;
-	--color-primary: rgb(255, 180, 162);
+	--color-primary: #ffb4a2;
 	--color-secondary: #8b5d66;
 	--color-tertiary: #6d6875;
+  --color-cta: #004e61;
 	--font-logo: 'Style Script', cursive;
 	--font-primary: 'Montserrat', sans-serif;
 	--color-white: #fff;
@@ -49,6 +50,27 @@ a {
 	font-size: 2.6rem;
 	text-align: center;
 	margin-bottom: 2em;
+}
+
+.btn{
+  padding: 0.6em 1.2em;	
+  font-size: 1.6rem;
+	font-weight: 600;
+  text-transform: uppercase;	  
+  color: var(--text-color-primary);		
+  background-color: var(--color-primary);	
+  border-radius: 15px;
+  transition: color 0.5s, background-color 0.5s;
+}
+
+.btn:hover {	
+	color: var(--color-white);
+  background-color: var(--color-secondary);		
+}
+
+.btn-buy{
+  background-color: var(--color-cta);
+  color: var(--color-white);
 }
 
 .nav {
@@ -169,21 +191,8 @@ a {
 	font-size: 1.8rem;
 }
 
-.btn{
-  padding: 0.6em 1.2em;	
-  font-size: 1.6rem;
-	font-weight: 600;
-  text-transform: uppercase;	
-  color: var(--color-white);
-	border: 2px solid var(--color-white);
-	background-color: var(--color-secondary);		
-  border-radius: 15px;
-  transition: color 0.5s, background-color 0.5s;
-}
-
-.header__btn:hover {	
-	color: var(--text-color-primary);
-	background-color: var(--color-primary);
+.header__btn{
+  border: 2px solid var(--color-white);
 }
 
 /* Section with popular diets */
@@ -206,7 +215,7 @@ a {
   justify-content: space-between;
   margin-bottom: 2em;
 	padding-bottom: 2em;
-	width: 300px;
+	max-width: 450px;
 	border-radius: 20px;
   box-shadow: 10px 10px 25px  #a88a90b4;
 	overflow: hidden;
@@ -232,9 +241,14 @@ a {
 }
 
 .offer__diet__desc {	   
-	margin-bottom: 2em; 
+	margin-bottom: 1em; 
   padding: 0 2em;
   font-size: 1.6rem; 
+}
+
+.offer__btn-box{
+  display: flex;
+  flex-direction: column;
 }
 
 .offer__btn__more{     
@@ -252,18 +266,15 @@ a {
   color: var(--color-secondary);  
 }
 
-.offer__more-diets{
+.offer__more-diets, .offer__btn-buy{
   margin-top: 2em;
-  align-self: center;
-  border: none;  
-  background-color: var(--color-primary);
-  color: var(--text-color-primary);  
+  align-self: center;  
 }
 
-.offer__more-diets:hover{
-  background-color: var(--color-secondary);
-  color: var(--color-white);
-}
+/* .offer__btn-buy{
+  padding: 0.8em 1.6em;
+} */
+
 
 /* Media */
 
@@ -287,6 +298,11 @@ a {
 	.header__features{
 		font-size: 1.8rem;
 	}
+  
+}
+
+@media (min-width:690px){
+  
 }
 
 @media screen and (min-width: 768px) {
@@ -331,6 +347,10 @@ a {
   .header__btn {	
     font-size: 1.8rem;
   }
+
+  .offer__diet{
+    width: 350px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -362,7 +382,7 @@ a {
   }
 
   .offer__more-diets{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
   }
 }
 
