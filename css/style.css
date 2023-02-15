@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Style+Script&display=swap');
-
 *,
 *::before,
 *::after {
@@ -14,21 +12,23 @@
 	--color-primary: #ffb4a2;
 	--color-secondary: #8b5d66;
 	--color-tertiary: #6d6875;
-  --color-cta: #004e61;
+	--color-cta: #004e61;
 	--font-logo: 'Style Script', cursive;
 	--font-primary: 'Montserrat', sans-serif;
 	--color-white: #fff;
+	--linear-gradient-dark: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
 }
 
 body {
 	font-size: 1.6rem;
 	font-family: var(--font-primary);
 	color: var(--text-color-primary);
-  /* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+  line-height: 1.6;
+	/* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
 }
 
-::selection{
-  background-color: var(--color-primary);
+::selection {
+	background-color: var(--color-primary);
 }
 
 a {
@@ -47,37 +47,38 @@ a {
 }
 
 .section__heading {
-	font-size: 2.6rem;
-	text-align: center;
 	margin-bottom: 2em;
+	font-size: 2.6rem;
+	font-weight: 700;
+	text-align: center;
 }
 
-.btn{
-  padding: 0.6em 1.2em;	
-  font-size: 1.6rem;
+.btn {
+	padding: 0.6em 1.2em;
+	font-size: 1.6rem;
 	font-weight: 600;
-  text-transform: uppercase;	  
-  color: var(--text-color-primary);		
-  background-color: var(--color-primary);	
-  border-radius: 15px;
-  transition: color 0.5s, background-color 0.5s;
+	text-transform: uppercase;
+	color: var(--text-color-primary);
+	background-color: var(--color-primary);
+	border-radius: 15px;
+	transition: color 0.5s, background-color 0.5s;
 }
 
-.btn:hover {	
+.btn:hover {
 	color: var(--color-white);
-  background-color: var(--color-secondary);		
+	background-color: var(--color-secondary);
 }
 
-.btn-buy{
-  background-color: var(--color-cta);
-  color: var(--color-white);
+.btn-buy {
+	background-color: var(--color-cta);
+	color: var(--color-white);
 }
 
 .nav {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;	
+	width: 100%;
 	background-image: linear-gradient(to right, #ffafbd 0%, #ffc3a0 100%);
 	z-index: 100;
 }
@@ -86,7 +87,7 @@ a {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-  padding: 0.1em 2em 0.1em 1.8em;
+	padding: 0.1em 2em 0.1em 1.8em;
 }
 
 /* Burger menu for smaller screens */
@@ -150,8 +151,7 @@ a {
 	justify-content: center;
 	height: 100%;
 	margin-top: 3em;
-	background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),
-		url('../img/weight-loss.jpg');
+	background-image: var(--linear-gradient-dark), url('../img/weight-loss.jpg');
 	background-position: center;
 	background-size: cover;
 	color: var(--color-white);
@@ -163,146 +163,212 @@ a {
 }
 
 .header__logo {
-  margin-bottom: 0.1em;
+	margin-bottom: 0.7em;
 	font-size: 6rem;
 	font-family: var(--font-logo);
 	font-weight: 500;
 }
 
 .header__heading {
-  margin-bottom: 1em;
-	font-size: 1.8rem;	
-}
-
-.header__features {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	margin-bottom: 3em;
-  font-size: 1.6rem;
-}
-
-.header__features__item {
-	padding-bottom: 1em;	
-}
-
-.header__features__item i {
-	padding-right: 0.3em;
 	font-size: 1.8rem;
+	font-weight: 500;
 }
 
-.header__btn{
-  border: 2px solid var(--color-white);
+.header__btn {
+	border: 2px solid var(--color-white);
 }
 
 /* Section with popular diets */
 
-.offer{
-  display: flex;
-  flex-direction: column;
+.offer {
+	display: flex;
+	flex-direction: column;
 }
 
 .offer__diets {
 	display: flex;
-	justify-content: space-evenly;	
+	justify-content: space-evenly;
 	flex-wrap: wrap;
-  gap: 1em;
+	gap: 1em;
 }
 
-.offer__diet {	  
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 2em;
+.offer__diet {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-bottom: 2em;
 	padding-bottom: 2em;
 	max-width: 450px;
 	border-radius: 20px;
-  box-shadow: 10px 10px 25px  #a88a90b4;
+	box-shadow: 10px 10px 25px #a88a90b4;
 	overflow: hidden;
-  background-image: linear-gradient(315deg, #ffab818a 0%,rgba(255, 147, 139, 0.336) 74%);
-  transition: transform 0.4s;
+	background-image: linear-gradient(315deg, #ffab818a 0%, rgba(255, 147, 139, 0.336) 74%);
+	transition: transform 0.4s;
 }
 
-.offer__diet:hover{
-  transform: scale(1.05);  
+.offer__diet:hover {
+	transform: scale(1.05);
 }
 
 .offer__diet__img {
-  margin-bottom: 2em;	
-  width: 100%;
-  height: 200px;
-	object-fit: cover;	
+	margin-bottom: 2em;
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
 }
 
 .offer__name {
-  margin-bottom: 1em;
+	margin-bottom: 1em;
 	font-size: 1.8rem;
-	text-align: center;	
+	text-align: center;
 }
 
-.offer__diet__desc {	   
-	margin-bottom: 1em; 
-  padding: 0 2em;
-  font-size: 1.6rem; 
+.offer__diet__desc {
+	margin-bottom: 1em;
+	padding: 0 2em;
+	font-size: 1.6rem;
 }
 
-.offer__btn-box{
-  display: flex;
-  flex-direction: column;
+.offer__btn-box {
+	display: flex;
+	flex-direction: column;
 }
 
-.offer__btn__more{     
-  padding: 0 2em;
-  font-weight: 700;
-  transition: color 0.5s;
+.offer__btn__more {
+	padding: 0 2em;
+	font-weight: 700;
+	transition: color 0.5s;
 }
 
-.offer__btn__more i{    
-  padding-left: 0.5em; 
+.offer__btn__more i {
+	padding-left: 0.5em;
+	font-size: 1.4rem;
+}
+
+.offer__btn__more:hover {
+	color: var(--color-secondary);
+}
+
+.offer__more-diets,
+.offer__btn-buy {
+	margin-top: 2em;
+	align-self: center;
+}
+
+.offer__btn-buy{
   font-size: 1.4rem;
 }
 
-.offer__btn__more:hover{ 
-  color: var(--color-secondary);  
+.hero-img {
+	padding: 7em 0;
+	background-image: var(--linear-gradient-dark), url('../img/yoga.jpg');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	text-align: center;
 }
 
-.offer__more-diets, .offer__btn-buy{
-  margin-top: 2em;
-  align-self: center;  
+.hero-img__title {
+	font-size: 9rem;
+	font-family: var(--font-logo);
+	color: var(--color-white);
 }
 
-/* .offer__btn-buy{
-  padding: 0.8em 1.6em;
-} */
+.hero-img__text {
+	padding: 1.5em 0;
+	font-size: 2rem;
+	color: var(--color-white);
+}
 
+.hero-img hr {
+	margin: 0 auto;
+	width: 90%;
+}
+
+/* Features */
+
+.features__content {
+	display: flex;
+	flex-direction: column;
+}
+
+.features__info {
+	display: flex;
+	flex-direction: column;	
+  /* align-items: space-evenly; */
+}
+
+.features__img {
+  margin-bottom: 2em;
+	width: 100%;	
+	background-image: url('../img/fresh-fruits.jpg');
+	background-position: center;
+	background-size: cover;
+  border-radius: 15px;
+}
+
+.features__desc{
+  margin-bottom: 2em;
+}
+
+.features__desc p{
+  margin-bottom: 0.5em;
+}
+
+.features__box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: start;
+}
+
+.features__box__item {
+	padding-bottom: 2em;
+	border-bottom: 1px solid var(--text-color-primary);
+}
+
+.features__box__item:first-of-type {
+	border-top: 1px solid var(--text-color-primary);
+}
+
+.features__item__title {
+	padding-top: 2em;
+	padding-bottom: 1em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.features__item__title i {
+	margin-right: 0.3em;
+}
 
 /* Media */
 
 @media screen and (min-width: 576px) {
-  .section__heading {
-    font-size: 3rem;
-  }
+	.section__heading {
+		font-size: 3rem;
+	}
 
 	.header__logo {
 		font-size: 8rem;
 	}
 
-  .header__heading{
-    font-size: 3rem;
-  }
+	.header__heading {
+		font-size: 3rem;
+	}
 
 	.header__content {
 		padding: 4em 0 6em 5em;
 	}
 
-	.header__features{
+	.header__features {
 		font-size: 1.8rem;
 	}
-  
-}
 
-@media (min-width:690px){
-  
+	.features__content {
+		padding: 0 2em;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -344,23 +410,42 @@ a {
 		background-color: var(--color-secondary);
 	}
 
-  .header__btn {	
-    font-size: 1.8rem;
-  }
+	.header__btn {
+		font-size: 1.8rem;
+	}
 
-  .offer__diet{
-    width: 350px;
-  }
+	.offer__diet {
+		width: 350px;
+	}
+
+	.hero-img {
+		padding: 9em 0;
+	}
+
+	.features__info {		
+		flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+	}
+
+	.features__box__item, .features__img, .features__desc {
+		width: 45%;
+	}
+
+	.features__box__item:nth-of-type(odd) {
+		border-bottom: none;
+		border-top: 1px solid var(--text-color-primary);
+	}
 }
 
 @media screen and (min-width: 992px) {
-  .section__heading {
-    font-size: 3.2rem;
-  }
+	.section__heading {
+		font-size: 3.2rem;
+	}
 
-  .section__padding {
-    padding: 6em 2em;
-  }
+	.section__padding {
+		padding: 6em 2em;
+	}
 
 	.header {
 		background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%),
@@ -370,41 +455,70 @@ a {
 	.header__logo {
 		font-size: 10rem;
 	}
-	
-	.header__features{
+
+	.header__features {
 		font-size: 2rem;
 	}
+
+	.hero-img {
+		padding: 10em 0;
+		background-image: var(--linear-gradient-dark), url('../img/yoga-big.jpg');
+	}
+
+	.hero-img__title {
+		font-size: 11rem;
+	}
+
+	.hero-img__text {
+		font-size: 2.2rem;
+	}
+
+	.hero-img hr {
+		width: 70%;
+	}
+
+  .offer__btn-buy{
+    font-size: 1.6rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-  .section__heading {
-    font-size: 4rem;
-  }
+	.section__heading {
+		font-size: 4rem;
+	}
 
-  .offer__more-diets{
-    font-size: 1.8rem;
-  }
+	.offer__more-diets {
+		font-size: 1.8rem;
+	}
 }
 
 @media screen and (min-width: 1400px) {
 	.nav__left__item {
 		position: relative;
 		font-size: 1.8rem;
-  }
-  
-  .header__logo {
+	}
+
+	.header__logo {
 		font-size: 12rem;
 	}
 
-  .header__heading {
+	.header__heading {
 		font-size: 3.8rem;
 	}
 
-	.header__features{
+	.header__features {
 		font-size: 2.2rem;
 	}
 
-  .header__btn {	
-    font-size: 2rem;
-  }
+	.header__btn {
+		font-size: 2rem;
+	}
+
+	.hero-img__title {
+		font-size: 14rem;
+	}
+
+	.hero-img__text {
+		font-size: 2.4rem;
+	}
 }
