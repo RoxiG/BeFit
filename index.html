@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="pl">
 	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="author" content="Roksana Gamziuk">
-		<meta name="description" content="BeFit - najlepsze diety! Odchudzanie - z nami się uda!">
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Roksana Gamziuk" />
+		<meta name="description" content="BeFit - najlepsze diety! Odchudzanie - z nami się uda!" />
 		<title>BeFit - najlepsze diety!</title>
 		<script src="https://kit.fontawesome.com/4e6ea67817.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Style+Script&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Style+Script&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/hamburgers.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/small.css" />
+		<link rel="stylesheet" href="css/medium.css" />
+		<link rel="stylesheet" href="css/large.css" />
+		<link rel="stylesheet" href="css/xlarge.css" />
 	</head>
 	<body>
 		<!-- burger menu and navigation bar -->
 		<nav class="nav">
 			<div class="wrapper">
-				<button class="burger_menu">
-					<div class="burger_menu__box">
-						<div class="burger_menu__bars"></div>
-					</div>
-				</button>
+				<a href="#" class="nav__logo">BeFit</a>
 				<div class="nav__left">
 					<a href="#" class="nav__left__item">Diety</a>
 					<a href="#" class="nav__left__item">O nas</a>
@@ -31,15 +34,32 @@
 					<a href="#" class="nav__left__item">Kontakt</a>
 				</div>
 				<div class="nav__right">
-					<a href="#" class="nav__right__item" aria-label="user account"><i class="fa-solid fa-user"></i></a>
-					<a href="#" class="nav__right__item" aria-label="basket"><i class="fa-solid fa-bag-shopping"></i></a>
+					<a href="#" class="nav__right__item" aria-label="user account"
+						><i class="fa-solid fa-user"></i
+					></a>
+					<a href="#" class="nav__right__item" aria-label="basket"
+						><i class="fa-solid fa-bag-shopping"></i
+					></a>
 				</div>
 			</div>
 		</nav>
+		<button class="nav__burger-btn hamburger hamburger--arrow-r" type="button">
+			<span class="hamburger-box">
+				<span class="hamburger-inner"></span>
+			</span>
+		</button>
+		<div class="nav-mobile">
+			<a href="#" class="nav-mobile__item">Diety</a>
+			<a href="#" class="nav-mobile__item">O nas</a>
+			<a href="#" class="nav-mobile__item">Cennik</a>
+			<a href="#" class="nav-mobile__item">Kalkulatory</a>
+			<a href="#" class="nav-mobile__item">Blog</a>
+			<a href="#" class="nav-mobile__item">Kontakt</a>
+		</div>
 		<header class="header">
 			<div class="header__content wrapper">
-				<h1 class="header__logo">BeFit</h1>
-				<h2 class="header__heading">Z nami Ci się uda!</h2>				
+				<h1 class="header__title">Najlepsze diety</h1>
+				<h2 class="header__heading">Z nami Ci się uda!</h2>
 				<a href="#" class="header__btn btn">Zamów dietę</a>
 			</div>
 		</header>
@@ -57,7 +77,7 @@
 							<img
 								src="img/keto-diet.jpg"
 								alt="Dieta ketogeniczna - posiłek z jajkami, awokado i warzywami"
-								class="offer__diet__img">
+								class="offer__diet__img" />
 							<h3 class="offer__name">Dieta ketogeniczna</h3>
 							<p class="offer__diet__desc">
 								Niskowęglowodanowa dieta, pozwalająca szybko zrzucić zbędne kilogramy. Oparta na
@@ -65,7 +85,9 @@
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
 							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
@@ -76,14 +98,17 @@
 							<img
 								src="img/ig-diet.jpg"
 								alt="Dieta o niskim indeksie glikemicznym - posiłek pełen warzyw"
-								class="offer__diet__img">
+								class="offer__diet__img" />
 							<h3 class="offer__name">Dieta o niskim indeksie glikemicznym</h3>
 							<p class="offer__diet__desc">
-								Doskonała dieta dla osób z cukrzycą oraz insulinoopornością, oraz dla tych którzy	chcą cieszyć się dobrym zdrowiem. Pomaga utrzymać stały poziom glukozy we krwi. 
+								Doskonała dieta dla osób z cukrzycą oraz insulinoopornością, oraz dla tych którzy
+								chcą cieszyć się dobrym zdrowiem. Pomaga utrzymać stały poziom glukozy we krwi.
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
 							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
@@ -94,7 +119,7 @@
 							<img
 								src="img/vege-diet.jpg"
 								alt="Dieta wegetariańska - różne warzywa i owoce"
-								class="offer__diet__img">
+								class="offer__diet__img" />
 							<h3 class="offer__name">Dieta wegetariańska</h3>
 							<p class="offer__diet__desc">
 								Specjalnie skomponowana dieta dla osób niejedzących mięsa. Pełna warzyw, owoców,
@@ -103,7 +128,9 @@
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
 							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
@@ -114,7 +141,7 @@
 							<img
 								src="img/vegan-diet.jpg"
 								alt="Dieta wegańska - warzywa i owoce"
-								class="offer__diet__img">
+								class="offer__diet__img" />
 							<h3 class="offer__name">Dieta wegańska</h3>
 							<p class="offer__diet__desc">
 								Zbilansowana dieta dla osób na diecie roślinnej. Pełna warzyw, owoców, orzechów,
@@ -123,7 +150,9 @@
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
 							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
@@ -134,7 +163,7 @@
 							<img
 								src="img/low-cal.jpg"
 								alt="Dieta niskokaloryczna - zbilansowany posiłek z serem, pomidorem, szynką, chlebem ciemnym"
-								class="offer__diet__img">
+								class="offer__diet__img" />
 							<h3 class="offer__name">Dieta niskokaloryczna</h3>
 							<p class="offer__diet__desc">
 								Idealna dieta dla każdego, pozwalająca zrzucić zbędne kilogramy. Zbilansowana i
@@ -142,7 +171,9 @@
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
 							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
@@ -150,7 +181,7 @@
 					<!-- -------------- Diet 6 -------------- -->
 					<div class="offer__diet">
 						<div class="offer__diet__info">
-							<img src="img/gluten-free.jpg" alt="Dieta bezglutenowa" class="offer__diet__img">
+							<img src="img/gluten-free.jpg" alt="Dieta bezglutenowa" class="offer__diet__img" />
 							<h3 class="offer__name">Dieta bezglutenowa</h3>
 							<p class="offer__diet__desc">
 								Dieta skomponowana specjalnie dla osób z nietolerancją pokarmową i alergiami
@@ -158,15 +189,17 @@
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
-              <a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
+							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
 
 					<!-- -------------- Diet 7 -------------- -->
 					<div class="offer__diet">
 						<div class="offer__diet__info">
-							<img src="img/no-milk.jpg" alt="Dieta bez nabiału" class="offer__diet__img">
+							<img src="img/no-milk.jpg" alt="Dieta bez nabiału" class="offer__diet__img" />
 							<h3 class="offer__name">Dieta bez nabiału</h3>
 							<p class="offer__diet__desc">
 								Zbilansowana dieta, wykluczająca produkty mleczne. Idealna dla osób z alergiami
@@ -174,7 +207,9 @@
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
 							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
@@ -182,7 +217,7 @@
 					<!-- -------------- Diet 8 -------------- -->
 					<div class="offer__diet">
 						<div class="offer__diet__info">
-							<img src="img/sport-diet.jpg" alt="Dieta sportowa" class="offer__diet__img">
+							<img src="img/sport-diet.jpg" alt="Dieta sportowa" class="offer__diet__img" />
 							<h3 class="offer__name">Dieta sportowa</h3>
 							<p class="offer__diet__desc">
 								Dieta dla osób uprawiających sport i aktywnych fizycznie. Pozwala zbudować masę
@@ -190,7 +225,9 @@
 							</p>
 						</div>
 						<div class="offer__btn-box">
-							<a href="#" class="offer__btn__more">Zobacz menu <i class="fa-solid fa-arrow-right"></i></a>
+							<a href="#" class="offer__btn__more"
+								>Zobacz menu <i class="fa-solid fa-arrow-right"></i
+							></a>
 							<a href="#" class="offer__btn-buy btn btn-buy">Zamów dietę</a>
 						</div>
 					</div>
@@ -199,139 +236,201 @@
 				<a href="#" class="btn offer__more-diets">Więcej diet</a>
 			</section>
 
-      <!-- -------------- Hero-img -------------- -->
-      <section class="hero-img">
-        <p class="hero-img__title">BeFit</p>
-        <hr>
-        <p class="hero-img__text">Wymarzona sylwetka na wyciągnięcie ręki</p>
-        <hr>
-      </section>
+			<!-- -------------- Hero-img -------------- -->
+			<section class="hero-img">
+				<p class="hero-img__title">BeFit</p>
+				<hr />
+				<p class="hero-img__text">Wymarzona sylwetka na wyciągnięcie ręki</p>
+				<hr />
+        <a href="#" class="hero__btn btn">Zamów dietę</a>
+			</section>
 
-      <!-- -------------- Features -------------- -->
-      <section class="features section__padding wrapper">
-        <p class="features__title section__heading">Dlaczego my?</p>
-        <div class="features__content">          
-            <div class="features__info">
-              <img class="features__img" src="img/fresh-fruits.jpg" alt="Pyszna sałatka owocowa">
-              <div class="features__desc">
-                <p>Pomaganie innym w odzyskaniu zdrowia i zdobyciu wymarzonej sylwetki to nasza pasja. Z nami masz gwarancję, że w końcu się uda!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt est ratione odio commodi voluptatibus ab assumenda similique blanditiis dolore. Neque, magnam! Omnis ipsa nobis sunt, id aspernatur odio nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni error ad iusto rerum, ratione ipsa!</p>
-              </div>
-            </div>
-          
-          <!-- *-------------- Features box --------------* -->
-          <div class="features__box">
+			<!-- -------------- Features -------------- -->
+			<section class="features section__padding wrapper">
+				<p class="features__title section__heading">Dlaczego my?</p>
+				<div class="features__content">
+					<div class="features__info">
+						<img class="features__img" src="img/fresh-fruits.jpg" alt="Pyszna sałatka owocowa" />
+						<div class="features__desc">
+							<p>
+								Pomaganie innym w odzyskaniu zdrowia i zdobyciu wymarzonej sylwetki to nasza pasja.
+								Z nami masz gwarancję, że w końcu się uda!
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sunt est ratione odio
+								commodi voluptatibus ab assumenda similique blanditiis dolore. Neque, magnam! Omnis
+								ipsa nobis sunt, id aspernatur odio nam. Lorem ipsum dolor sit amet consectetur
+								adipisicing elit. Magni error ad iusto rerum, ratione ipsa!
+							</p>
+						</div>
+					</div>
 
-          <!-- -------------- Single feature -------------- -->                                  
-              <div class="features__box__item">                
-                <p class="features__item__title">
-                  <i class="fa-solid fa-utensils"></i> dopasowany jadłospis
-                </p>
-                <p class="features__item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aspernatur nostrum dolorum ducimus dolor ipsam aliquid corporis veniam animi quaerat.</p>
-              </div>          
-               
-              <!-- -------------- Single feature -------------- -->
-              <div class="features__box__item">               
-                <p class="features__item__title">
-                  <i class="fa-sharp fa-solid fa-seedling"></i> zdrowe i pełnowartościowe produkty
-                </p>
-                <p class="features__item__desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere aut, sequi cumque quia placeat nisi!</p>
-              </div>
-              
-              <!-- -------------- Single feature -------------- -->
-              <div class="features__box__item">                
-                <p class="features__item__title">
-                  <i class="fa-solid fa-users"></i> najlepsi dietetycy
-                </p>
-                <p class="features__item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis quia corporis tenetur hic nesciunt earum magni, fugit suscipit maxime? Corporis et perferendis veniam! Distinctio.</p>
-              </div>
+					<!-- *-------------- Features box --------------* -->
+					<div class="features__box">
+						<!-- -------------- Single feature -------------- -->
+						<div class="features__box__item">
+							<p class="features__item__title">
+								<i class="fa-solid fa-utensils"></i> dopasowany jadłospis
+							</p>
+							<p class="features__item__desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aspernatur nostrum
+								dolorum ducimus dolor ipsam aliquid corporis veniam animi quaerat.
+							</p>
+						</div>
 
-              <!-- -------------- Single feature -------------- -->                                  
-              <div class="features__box__item">                
-                <p class="features__item__title">
-                  <i class="fa-solid fa-receipt"></i> lista zakupów
-                </p>
-                <p class="features__item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aspernatur nostrum dolorum ducimus dolor ipsam aliquid corporis veniam animi quaerat.</p>
-              </div>          
-               
-              <!-- -------------- Single feature -------------- -->
-              <div class="features__box__item">               
-                <p class="features__item__title">
-                  <i class="fa-solid fa-face-smile"></i> dobre samopoczucie
-                </p>
-                <p class="features__item__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla asperiores eum reprehenderit quas facere ea laudantium error.</p>
-              </div>
-              
-              <!-- -------------- Single feature -------------- -->
-              <div class="features__box__item">                
-                <p class="features__item__title">
-                  <i class="fa-solid fa-heart-pulse"></i> poprawa stanu zdrowia
-                </p>
-                <p class="features__item__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui neque placeat sapiente facilis quis porro, quo, cum assumenda ut, temporibus corporis culpa at! Facere, culpa. Quo in magni blanditiis dolor?</p>
-              </div>
-          </div>
-        </div>
-      </section>
+						<!-- -------------- Single feature -------------- -->
+						<div class="features__box__item">
+							<p class="features__item__title">
+								<i class="fa-sharp fa-solid fa-seedling"></i> zdrowe i pełnowartościowe produkty
+							</p>
+							<p class="features__item__desc">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere aut, sequi cumque
+								quia placeat nisi!
+							</p>
+						</div>
 
-      <!-- *-------------- Team members --------------* -->
-      <section class="team wrapper section__padding">
-        <h2 class="section__heading">Nasz zespół</h2>
-        <div class="team__list">
-          <div class="team__list__member">
-            <img src="img/team1.jpg" alt="Aleksandra Nowak" class="team__member__img team__member__img--one">
-            <h3 class="team__member__name">Aleksandra Nowak</h3>
-            <h4 class="team__member__position">Kierownik dietetyków</h4>
-            <a href="#" class="team__member__btn btn">Poznaj</a>
-          </div>
+						<!-- -------------- Single feature -------------- -->
+						<div class="features__box__item">
+							<p class="features__item__title">
+								<i class="fa-solid fa-users"></i> najlepsi dietetycy
+							</p>
+							<p class="features__item__desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facilis quia
+								corporis tenetur hic nesciunt earum magni, fugit suscipit maxime? Corporis et
+								perferendis veniam! Distinctio.
+							</p>
+						</div>
 
-          <div class="team__list__member">
-            <img src="img/team2.jpg" alt="Anna Kowalska" class="team__member__img team__member__img--two">
-            <h3 class="team__member__name">Anna Kowalska</h3>
-            <h4 class="team__member__position">Dietetyk</h4>
-            <a href="#" class="team__member__btn btn">Poznaj</a>
-          </div>
+						<!-- -------------- Single feature -------------- -->
+						<div class="features__box__item">
+							<p class="features__item__title"><i class="fa-solid fa-receipt"></i> lista zakupów</p>
+							<p class="features__item__desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, aspernatur nostrum
+								dolorum ducimus dolor ipsam aliquid corporis veniam animi quaerat.
+							</p>
+						</div>
 
-          <div class="team__list__member">
-            <img src="img/team3.jpg" alt="Marcin Konopiecki" class="team__member__img team__member__img--three">
-            <h3 class="team__member__name">Marcin Konopiecki</h3>
-            <h4 class="team__member__position">Dietetyk</h4>
-            <a href="#" class="team__member__btn btn">Poznaj</a>
-          </div>
+						<!-- -------------- Single feature -------------- -->
+						<div class="features__box__item">
+							<p class="features__item__title">
+								<i class="fa-solid fa-face-smile"></i> dobre samopoczucie
+							</p>
+							<p class="features__item__desc">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, nulla asperiores eum
+								reprehenderit quas facere ea laudantium error.
+							</p>
+						</div>
 
-          <div class="team__list__member">
-            <img src="img/team4.jpg" alt="Barbara Stopka" class="team__member__img team__member__img--four">
-            <h3 class="team__member__name">Barbara Stopka</h3>
-            <h4 class="team__member__position">Psychodietetyk</h4>
-            <a href="#" class="team__member__btn btn">Poznaj</a>
-          </div>
+						<!-- -------------- Single feature -------------- -->
+						<div class="features__box__item">
+							<p class="features__item__title">
+								<i class="fa-solid fa-heart-pulse"></i> poprawa stanu zdrowia
+							</p>
+							<p class="features__item__desc">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui neque placeat sapiente
+								facilis quis porro, quo, cum assumenda ut, temporibus corporis culpa at! Facere,
+								culpa. Quo in magni blanditiis dolor?
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 
-          <div class="team__list__member">
-            <img src="img/team5.jpg" alt="Wojciech Strzałkowski" class="team__member__img team__member__img--five">
-            <h3 class="team__member__name">Wojciech Strzałkowski</h3>
-            <h4 class="team__member__position">Trener personalny</h4>
-            <a href="#" class="team__member__btn btn">Poznaj</a>
-          </div>
-        </div>
-      </section>
+			<!-- *-------------- Team members --------------* -->
+			<section class="team wrapper section__padding">
+				<h2 class="section__heading">Nasz zespół</h2>
+				<div class="team__list">
+					<div class="team__list__member">
+						<img
+							src="img/team1.jpg"
+							alt="Aleksandra Nowak"
+							class="team__member__img team__member__img--one" />
+						<h3 class="team__member__name">Aleksandra Nowak</h3>
+						<h4 class="team__member__position">Kierownik dietetyków</h4>
+						<a href="#" class="team__member__btn btn">Poznaj</a>
+					</div>
+
+					<div class="team__list__member">
+						<img
+							src="img/team2.jpg"
+							alt="Anna Kowalska"
+							class="team__member__img team__member__img--two" />
+						<h3 class="team__member__name">Anna Kowalska</h3>
+						<h4 class="team__member__position">Dietetyk</h4>
+						<a href="#" class="team__member__btn btn">Poznaj</a>
+					</div>
+
+					<div class="team__list__member">
+						<img
+							src="img/team3.jpg"
+							alt="Marcin Konopiecki"
+							class="team__member__img team__member__img--three" />
+						<h3 class="team__member__name">Marcin Konopiecki</h3>
+						<h4 class="team__member__position">Dietetyk</h4>
+						<a href="#" class="team__member__btn btn">Poznaj</a>
+					</div>
+
+					<div class="team__list__member">
+						<img
+							src="img/team4.jpg"
+							alt="Barbara Stopka"
+							class="team__member__img team__member__img--four" />
+						<h3 class="team__member__name">Barbara Stopka</h3>
+						<h4 class="team__member__position">Psychodietetyk</h4>
+						<a href="#" class="team__member__btn btn">Poznaj</a>
+					</div>
+
+					<div class="team__list__member">
+						<img
+							src="img/team5.jpg"
+							alt="Wojciech Strzałkowski"
+							class="team__member__img team__member__img--five" />
+						<h3 class="team__member__name">Wojciech Strzałkowski</h3>
+						<h4 class="team__member__position">Trener personalny</h4>
+						<a href="#" class="team__member__btn btn">Poznaj</a>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
-      <div class="wrapper">
-        <div class="footer__left">
-          <p class="footer__left__logo">BeFit</p>
-          <p class="footer__text">Indywidualna dieta online</p>            
-          <p class="footer__text">Doświadczeni dietetycy i trenerzy</p>
-        </div>
-        <div class="footer__right">
-          <p class="footer__heading">Kontakt</p>
-          <a href="tel: +48 900 000 000" class="footer__contact"><i class="fa-solid fa-phone"></i> +48 900 000 000</a>
-          <a href="mailto:kontakt@befit.pl" class="footer__contact"><i class="fa-solid fa-envelope"></i> kontakt@befit.pl</a>
-          <div class="footer__social-media">
-            <a href="#" class="footer__contact"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#" class="footer__contact"><i class="fa-brands fa-instagram"></i></a>            
-          </div>
-        </div>
-        </div>
-        <p class="footer__rights">&copy;<span class="footer__year"></span> BeFit - z nami Ci się uda!</p>      
-    </footer>
+			<div class="wrapper">
+				<div class="footer__left">
+					<a href="#" class="footer__left__logo">BeFit</a>
+					<p class="footer__text">Indywidualna dieta online</p>
+					<p class="footer__text">Doświadczeni dietetycy i trenerzy</p>
+				</div>
+				<div class="footer__links">
+				  <div class="footer__links__one">
+  					<a href="#" class="footer__links__item">Diety</a>
+  					<a href="#" class="footer__links__item">O nas</a>
+  					<a href="#" class="footer__links__item">Cennik</a>
+  					<a href="#" class="footer__links__item">Kalkulatory</a>
+  				</div>
+  				<div class="footer__links__two">
+  					<a href="#" class="footer__links__item">Blog</a>
+  					<a href="#" class="footer__links__item">Kontakt</a>
+  				</div>
+				</div>
+				<div class="footer__right">
+					<p class="footer__heading">Kontakt</p>
+					<a href="tel: +48 900 000 000" class="footer__contact"
+						><i class="fa-solid fa-phone"></i> +48 900 000 000</a
+					>
+					<a href="mailto:kontakt@befit.pl" class="footer__contact"
+						><i class="fa-solid fa-envelope"></i> kontakt@befit.pl</a
+					>
+					<div class="footer__social-media">
+						<a href="#" class="footer__contact"><i class="fa-brands fa-square-facebook"></i></a>
+						<a href="#" class="footer__contact"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="footer__contact"><i class="fa-brands fa-square-twitter"></i></a>
+					</div>
+				</div>
+			</div>			
+			<p class="footer__rights">
+				&copy;<span class="footer__year"></span> BeFit - z nami Ci się uda!
+			</p>
+		</footer>
+
+		<script src="js/main.js"></script>
 	</body>
 </html>
